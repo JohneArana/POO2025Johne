@@ -19,5 +19,9 @@ main(){
 	cin>>telefono;
 	Cliente cliente = Cliente(nombres, apellidos, direccion, telefono, fecha_nacimiento, nit);
 	cliente.leer();
+	cout<<"Ingrese Nit a Modificar: ";
+	cin>>nit;
+	cliente.setNit(nit);
+	cout<<cliente.getNit()<<","<<cliente.getNombres()<<" "<<cliente.getApellidos()<<endl;
 	
 }
