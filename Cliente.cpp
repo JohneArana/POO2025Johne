@@ -17,8 +17,8 @@ class Cliente : Persona{
 			cout<<"Nit: "<< nit<<endl;
 			cout<<"Nombres: "<<nombres<<endl;
 			cout<<"Apellidos: "<<apellidos<<endl;
-			cout<<"Dirección: "<<direccion<<endl;
-			cout<<"Teléfono: "<<telefono<<endl;
+			cout<<"Direccion: "<<direccion<<endl;
+			cout<<"Telefono: "<<telefono<<endl;
 			cout<<"Fecha de Nacimiento: "<<fecha_nacimiento<<endl;
 		}	 
 };
