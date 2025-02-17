@@ -3,7 +3,7 @@ using namespace std;
 class Persona {
 	// atributos
 	protected :
-	string nombres,apellidos, direccion, fecha_nacimiento;
+	string nombres,apellidos, direccion;
 	int telefono;
 	
 	// metodos
@@ -11,12 +11,11 @@ class Persona {
 	protected :
 	Persona(){
 	}
-	Persona (string nom,string ape,string dir,int tel,string fn){
+	Persona (string nom,string ape,string dir,int tel){
 		nombres = nom;
 		apellidos = ape;
 		direccion = dir;
 		telefono = tel;
-		fecha_nacimiento = fn;
 	}
 	// crud
 	void crear();

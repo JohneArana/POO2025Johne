@@ -10,7 +10,7 @@ class Empleado : Persona{
 	public :
 		Empleado (){
 		}
-		Empleado (string nom, string ape, string dir, int tel, string fn, string n, string ce, string pue) : Persona(nom, ape, dir, tel, fn){
+		Empleado (string nom, string ape, string dir, int tel, string n, string ce, string pue) : Persona(nom, ape, dir, tel, fn){
 			codigo_empleado = ce;
 			puesto = pue;
 		}
@@ -33,9 +33,6 @@ class Empleado : Persona{
 		void setTelefono(int tel){
 			telefono = tel;
 		}
-		void setFechaNacimiento(string fn){
-			fecha_nacimiento = fn;
-		}
 		string getCodigoEmpleado(){
 			return codigo_empleado
 		}
@@ -54,9 +51,6 @@ class Empleado : Persona{
 		int getTelefono(){
 			return telefono;
 		}
-		string getFechaNacimiento(){
-			return fecha_nacimiento;
-		}
 		void leer(){
 			cout<<"Codigo de Empleado: "<< codigo_empleado<<endl;
 			cout<<"Puesto: "<<puesto<<endl;
@@ -64,6 +58,5 @@ class Empleado : Persona{
 			cout<<"Apellidos: "<<apellidos<<endl;
 			cout<<"Direccion: "<<direccion<<endl;
 			cout<<"Telefono: "<<telefono<<endl;
-			cout<<"Fecha de Nacimiento: "<<fecha_nacimiento<<endl;
 		}	 
 };
